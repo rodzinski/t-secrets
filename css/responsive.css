@@ -90,6 +90,12 @@
 
     }
 
+    .contact-layout{
+
+        gap:45px;
+
+    }
+
 }
 
 
@@ -301,6 +307,33 @@
 
     }
 
+    /* CONTATO */
+
+    .contact-page{
+
+        padding-top:126px;
+
+    }
+
+    .contact-intro{
+
+        margin-bottom:40px;
+
+    }
+
+    .contact-intro h1{
+
+        font-size:2.7rem;
+
+    }
+
+    .contact-layout{
+
+        grid-template-columns:1fr;
+        gap:36px;
+
+    }
+
 
     /* SEÇÕES */
 
@@ -503,6 +536,30 @@
     .product-details h1{
 
         font-size:2rem;
+
+    }
+
+    .contact-page{
+
+        padding-top:116px;
+
+    }
+
+    .contact-intro h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .contact-form{
+
+        padding:28px 20px;
+
+    }
+
+    .contact-form__fields{
+
+        grid-template-columns:1fr;
 
     }
 
