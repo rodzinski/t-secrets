@@ -199,3 +199,93 @@
     line-height:1.8;
 
 }
+
+/* ================= BANNER ================= */
+
+.page-banner{
+
+    padding:180px 0 100px;
+
+    text-align:center;
+
+    background:linear-gradient(
+        rgba(15,15,15,.85),
+        rgba(15,15,15,.85)
+    ),
+    url("../images/hero-bg.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.page-banner h1{
+
+    font-family:var(--titulo);
+
+    font-size:4rem;
+
+    margin:20px 0;
+
+}
+
+.page-banner p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--cinza);
+
+    line-height:1.8;
+
+}
+
+/* ================= FILTROS ================= */
+
+.collection-filter{
+
+    padding:40px 0;
+
+}
+
+.collection-filter .container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.collection-filter button{
+
+    padding:12px 28px;
+
+    background:#181818;
+
+    color:white;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.collection-filter button:hover,
+
+.collection-filter button.active{
+
+    background:var(--dourado);
+
+    color:var(--preto);
+
+}

@@ -15,57 +15,77 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<!-- ================= HEADER ================= -->
 
-    <header>
+<header class="header">
 
-        <div class="container">
+    <div class="container">
 
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="T'SECRETS">
-            </a>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="T'SECRETS">
+        </a>
 
-            <nav class="menu">
+        <nav class="menu" id="menu">
 
-                <ul>
+            <ul>
 
-                    <li>
-                        <a href="index.html" class="active">
-                            Início
-                        </a>
-                    </li>
+                <li>
+                    <a href="index.html" class="active">
+                        Início
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="colecao.html">
-                            Coleção
-                        </a>
-                    </li>
+                <li>
+                    <a href="colecao.html">
+                        Coleção
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="contato.html">
-                            Contato
-                        </a>
-                    </li>
+                <li>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                </li>
 
-                </ul>
+            </ul>
 
-            </nav>
-
-            <a href="contato.html" class="btn-header">
+            <a href="contato.html" class="btn-header mobile-btn">
                 Comprar Agora
             </a>
 
+        </nav>
+
+        <div class="header-actions">
+
+            <a href="contato.html" class="btn-header desktop-btn">
+                Comprar Agora
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
         </div>
 
-    </header>
+    </div>
 
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
     <!-- ================= MAIN ================= -->
 
     <main>
 
         <!-- ================= HERO ================= -->
 
-        <section class="hero">
+        <section id="inicio" class="hero">
 
             <div class="container">
 
@@ -350,18 +370,39 @@
 
     <footer>
 
-        <div class="container">
+    <div class="container">
 
-            <img src="images/logo.png" alt="T'SECRETS" class="footer-logo">
+        <img
+            src="images/logo.png"
+            alt="T'SECRETS"
+            class="footer-logo">
 
-            <p>
-                © 2026 T'SECRETS • Todos os direitos reservados.
-            </p>
+        <nav class="footer-menu">
 
-        </div>
+            <a href="index.html">
+                Início
+            </a>
 
-    </footer>
+            <a href="colecao.html">
+                Coleção
+            </a>
 
+            <a href="contato.html">
+                Contato
+            </a>
+
+        </nav>
+
+        <p>
+
+            © 2026 T'SECRETS • Todos os direitos reservados.
+
+        </p>
+
+    </div>
+
+</footer>
+<script src="js/scripts.js"></script>
 </body>
 
 </html>

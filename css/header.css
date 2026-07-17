@@ -53,3 +53,70 @@ nav a:hover::after{
     transform:translateY(-2px);
     box-shadow:0 10px 25px rgba(214,180,124,.25);
 }
+/* ================= HEADER ACTIONS ================= */
+
+.header-actions{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.menu-toggle{
+
+    display:none;
+
+    width:46px;
+    height:46px;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    position:relative;
+
+    z-index:1100;
+
+}
+
+.menu-toggle span{
+
+    display:block;
+
+    width:26px;
+    height:2px;
+
+    background:var(--branco);
+
+    margin:6px auto;
+
+    transition:.35s;
+
+}
+
+.mobile-btn{
+
+    display:none;
+
+}
+
+.menu-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:998;
+
+}
