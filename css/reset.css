@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 *{
     margin:0;
     padding:0;
@@ -12,10 +11,11 @@ body{
     background:var(--preto);
     color:var(--branco);
     font-family:var(--texto);
+    overflow-x:hidden;
 }
 img{
-    display:block;
     width:100%;
+    display:block;
 }
 a{
     text-decoration:none;
@@ -29,5 +29,5 @@ ul{
     margin:auto;
 }
 .section{
-    padding:120px 0;
+    padding:var(--section-padding) 0;
 }

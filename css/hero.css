@@ -1,0 +1,102 @@
+.hero{
+    position: relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+        linear-gradient(
+            to right,
+            rgba(15,15,15,.95) 15%,
+            rgba(15,15,15,.80) 45%,
+            rgba(15,15,15,.45) 75%,
+            rgba(15,15,15,.15) 100%
+        ),
+        url("../images/hero-bg.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.hero-text{
+    max-width:600px;
+}
+.subtitulo{
+    display:inline-block;
+    color:var(--dourado);
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:.9rem;
+    margin-bottom:15px;
+}
+.hero h1{
+    font-family:var(--titulo);
+    font-size:4.2rem;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+.hero h1::before{
+    content:"";
+    display:block;
+    width:70px;
+    height:3px;
+    background:var(--dourado);
+    margin-bottom:25px;
+}
+.hero p{
+    font-size:1.1rem;
+    color:#ddd;
+    line-height:1.8;
+    max-width:520px;
+    margin-bottom:40px;
+}
+.btn{
+    display:inline-block;
+    padding:16px 38px;
+    background:var(--dourado);
+    color:var(--preto);
+    border-radius:40px;
+    font-weight:600;
+    transition:.35s;
+}
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(214,180,124,.35);
+}
+.scroll-indicator{
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.scroll-indicator span{
+    display:block;
+    width:24px;
+    height:40px;
+    border:2px solid var(--dourado);
+    border-radius:20px;
+    position:relative;
+}
+.scroll-indicator span::before{
+    content:"";
+    position:absolute;
+    width:6px;
+    height:6px;
+    background:var(--dourado);
+    border-radius:50%;
+    left:50%;
+    top:8px;
+    transform:translateX(-50%);
+    animation:scroll 1.8s infinite;
+}
+@keyframes scroll{
+    0%{
+        opacity:0;
+        transform:translate(-50%,0);
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        transform:translate(-50%,16px);
+    }
+}

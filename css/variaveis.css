@@ -1,33 +1,20 @@
 @charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 :root{
-
     /* Cores */
-
     --preto:#0F0F0F;
     --preto-card:#181818;
-    --cinza:#BFBFBF;
     --branco:#F5F5F5;
+    --cinza:#BFBFBF;
+    --cinza-claro:#DDDDDD;
     --dourado:#D6B47C;
     --vinho:#7E3049;
-
     /* Fontes */
-
-    --titulo:'Playfair Display',serif;
-    --texto:'Poppins',sans-serif;
-
-    /* Container */
-
+    --titulo:'Playfair Display', serif;
+    --texto:'Poppins', sans-serif;
+    /* Layout */
     --container:1200px;
-
-    /* Transições */
-
-    --transition:.35s ease;
-
-    /* Bordas */
-
+    --section-padding:120px;
     --radius:20px;
-
+    --transition:.35s ease;
 }
