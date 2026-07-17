@@ -25,10 +25,17 @@
         0 0 30px rgba(214,180,124,.10);
 }
 .product-card__image{
-    height:430px;
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
     object-fit:cover;
-    padding:20px;
-    transition:.5s;
+
+    padding:18px;
+
+    transition:.45s;
+
 }
 .product-card:hover .product-card__image{
     transform:scale(1.05);

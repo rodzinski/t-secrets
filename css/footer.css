@@ -1,17 +1,61 @@
+/* ================= FOOTER ================= */
+
 footer{
+
     padding:70px 0;
+
     background:#090909;
+
     border-top:1px solid rgba(214,180,124,.08);
+
 }
+
 footer .container{
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
 }
+
 .footer-logo{
+
     width:150px;
+
 }
-footer p{
+
+.footer-menu{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.footer-menu a{
+
     color:var(--cinza);
+
+    transition:var(--transition);
+
+}
+
+.footer-menu a:hover{
+
+    color:var(--dourado);
+
+}
+
+footer p{
+
+    color:var(--cinza);
+
     font-size:.95rem;
+
 }
