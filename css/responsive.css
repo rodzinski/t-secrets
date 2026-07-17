@@ -327,12 +327,6 @@
 
     }
 
-    .contact-layout{
-
-        grid-template-columns:1fr;
-        gap:36px;
-
-    }
 
 
     /* SEÇÕES */
@@ -551,16 +545,5 @@
 
     }
 
-    .contact-form{
-
-        padding:28px 20px;
-
-    }
-
-    .contact-form__fields{
-
-        grid-template-columns:1fr;
-
-    }
 
 }

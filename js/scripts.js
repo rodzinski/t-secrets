@@ -111,19 +111,3 @@ if (sizeOptions.length) {
         });
     });
 }
-
-const contactForm = document.querySelector("[data-contact-form]");
-const contactFormStatus = document.getElementById("contactFormStatus");
-
-if (contactForm && contactFormStatus) {
-    contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        if (!contactForm.checkValidity()) {
-            contactForm.reportValidity();
-            return;
-        }
-
-        contactFormStatus.textContent = "Formulário validado e pronto para integração com seu serviço de envio.";
-    });
-}
