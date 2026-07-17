@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background:var(--preto);
+    color:var(--branco);
+    font-family:var(--texto);
+}
+img{
+    display:block;
+    width:100%;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+ul{
+    list-style:none;
+}
+.container{
+    width:min(var(--container),90%);
+    margin:auto;
+}
+.section{
+    padding:120px 0;
+}
