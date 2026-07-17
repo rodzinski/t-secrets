@@ -119,3 +119,12 @@ images/
 
 js/
 │── script.js
+
+## Checklist antes da publicação
+
+- Substituir as imagens de demonstração em `images/` pelos arquivos finais e manter textos alternativos descritivos.
+- Atualizar títulos, categorias, descrições, preços e tamanhos em `colecao.html` e `produto.html`.
+- Trocar os links placeholder de WhatsApp e Instagram em `contato.html` pelos canais oficiais.
+- Confirmar e, se necessário, atualizar o horário de atendimento em `contato.html`.
+- Integrar o formulário marcado com `data-contact-form` ao serviço de envio escolhido; ele hoje apenas valida os campos no navegador.
+- Atualizar os metadados de título e descrição quando os nomes e produtos finais estiverem definidos.

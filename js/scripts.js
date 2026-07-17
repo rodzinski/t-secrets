@@ -3,14 +3,24 @@ const toggle = document.getElementById("menuToggle");
 const overlay = document.getElementById("menuOverlay");
 
 if (menu && toggle && overlay) {
+    const mobileMenuQuery = window.matchMedia("(max-width: 992px)");
+
     const setMenuState = (isOpen) => {
+        const isMobileMenu = mobileMenuQuery.matches;
+
         menu.classList.toggle("active", isOpen);
         toggle.classList.toggle("active", isOpen);
         overlay.classList.toggle("active", isOpen);
+        menu.inert = isMobileMenu && !isOpen;
+        menu.setAttribute("aria-hidden", String(isMobileMenu && !isOpen));
         toggle.setAttribute("aria-expanded", String(isOpen));
         toggle.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
         overlay.setAttribute("aria-hidden", String(!isOpen));
     };
+
+    setMenuState(false);
+
+    mobileMenuQuery.addEventListener("change", () => setMenuState(false));
 
     toggle.addEventListener("click", () => {
         setMenuState(!menu.classList.contains("active"));
