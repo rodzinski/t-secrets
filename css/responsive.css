@@ -72,6 +72,12 @@
 
     }
 
+    .product-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
 }
 
 
@@ -209,6 +215,43 @@
     .scroll-indicator{
 
         bottom:26px;
+
+    }
+
+    /* COLEÇÃO */
+
+    .page-banner{
+
+        padding:150px 0 76px;
+
+    }
+
+    .page-banner h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .collection-filter{
+
+        padding:26px 0;
+
+    }
+
+    .collection-filter .container{
+
+        justify-content:flex-start;
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        padding-bottom:6px;
+        scrollbar-width:thin;
+
+    }
+
+    .collection-filter button{
+
+        flex:0 0 auto;
+        min-height:44px;
 
     }
 

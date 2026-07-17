@@ -29,3 +29,42 @@ if (menu && toggle && overlay) {
         }
     });
 }
+
+const filterButtons = document.querySelectorAll("[data-filter]");
+const collectionCards = document.querySelectorAll(".product-card[data-category]");
+const collectionEmpty = document.getElementById("collectionEmpty");
+
+if (filterButtons.length && collectionCards.length) {
+    const filterProducts = (category) => {
+        let visibleProducts = 0;
+
+        collectionCards.forEach((card) => {
+            const isVisible = category === "todos" || card.dataset.category === category;
+
+            card.classList.toggle("is-hidden", !isVisible);
+
+            if (isVisible) {
+                visibleProducts += 1;
+            }
+        });
+
+        if (collectionEmpty) {
+            collectionEmpty.hidden = visibleProducts > 0;
+        }
+    };
+
+    filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const category = button.dataset.filter;
+
+            filterButtons.forEach((filterButton) => {
+                const isActive = filterButton === button;
+
+                filterButton.classList.toggle("active", isActive);
+                filterButton.setAttribute("aria-pressed", String(isActive));
+            });
+
+            filterProducts(category);
+        });
+    });
+}

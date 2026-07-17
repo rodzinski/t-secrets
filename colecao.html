@@ -2,400 +2,152 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a coleção T'SECRETS de lingeries, bodies e acessórios selecionados para momentos especiais.">
     <title>Coleção | T'SECRETS</title>
-
-    <meta name="description"
-          content="Conheça toda a coleção T'SECRETS.">
-
-    <link rel="stylesheet"
-          href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-<header class="header">
-
-    <div class="container">
-
-        <a href="index.html" class="logo">
-
-            <img src="images/logo.png" alt="">
-
-        </a>
-
-        <nav class="menu" id="menu" aria-label="Navegação principal">
-
-            <ul>
-
-                <li><a href="index.html">Início</a></li>
-
-                <li><a href="colecao.html" class="active">Coleção</a></li>
-
-                <li><a href="contato.html">Contato</a></li>
-
-            </ul>
-
-            <a href="contato.html" class="btn-header mobile-btn">
-
-                Comprar Agora
-
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="T'SECRETS — Página inicial">
+                <img src="images/logo.png" alt="T'SECRETS">
             </a>
 
-        </nav>
+            <nav class="menu" id="menu" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="colecao.html" class="active" aria-current="page">Coleção</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
 
-        <div class="header-actions">
+                <a href="contato.html" class="btn-header mobile-btn">Comprar agora</a>
+            </nav>
 
-            <a href="contato.html" class="btn-header desktop-btn">
+            <div class="header-actions">
+                <a href="contato.html" class="btn-header desktop-btn">Comprar agora</a>
 
-                Comprar Agora
-
-            </a>
-
-            <button
-                type="button"
-                class="menu-toggle"
-                id="menuToggle"
-                aria-label="Abrir menu"
-                aria-controls="menu"
-                aria-expanded="false">
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
+                <button
+                    type="button"
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Abrir menu"
+                    aria-controls="menu"
+                    aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
+    </header>
 
-    </div>
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
 
-</header>
+    <main>
+        <section class="page-banner" aria-labelledby="collection-title">
+            <div class="container">
+                <span class="subtitulo">Nossa coleção</span>
+                <h1 id="collection-title">Elegância em cada detalhe.</h1>
+                <p>Descubra peças desenvolvidas para valorizar sua beleza com conforto e sofisticação.</p>
+            </div>
+        </section>
 
-<div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+        <section class="collection-filter" aria-label="Filtrar produtos por categoria">
+            <div class="container" role="group" aria-label="Categorias de produtos">
+                <button type="button" class="active" data-filter="todos" aria-pressed="true">Todos</button>
+                <button type="button" data-filter="lingeries" aria-pressed="false">Lingeries</button>
+                <button type="button" data-filter="bodies" aria-pressed="false">Bodies</button>
+                <button type="button" data-filter="acessorios" aria-pressed="false">Acessórios</button>
+            </div>
+        </section>
 
-<main>
+        <section class="section collection-products" aria-labelledby="collection-products-title">
+            <div class="container">
+                <div class="section-title">
+                    <span>Seleção especial</span>
+                    <h2 id="collection-products-title">Encontre sua próxima peça.</h2>
+                    <p>Modelos escolhidos para acompanhar seus momentos com conforto, delicadeza e presença.</p>
+                </div>
 
-    <!-- Banner -->
+                <div class="product-grid" id="collectionGrid">
+                    <article class="product-card" data-category="lingeries">
+                        <img src="images/produto1.png" class="product-card__image" alt="Conjunto Bordô azul-marinho" loading="lazy">
+                        <div class="product-card__content">
+                            <span class="product-card__category">Lingeries</span>
+                            <h3 class="product-card__title">Conjunto Bordô</h3>
+                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do Conjunto Bordô">Ver detalhes <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
 
-    <section class="page-banner">
+                    <article class="product-card" data-category="bodies">
+                        <img src="images/produto2.png" class="product-card__image" alt="Body Sensual bordô" loading="lazy">
+                        <div class="product-card__content">
+                            <span class="product-card__category">Bodies</span>
+                            <h3 class="product-card__title">Body Sensual</h3>
+                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do Body Sensual">Ver detalhes <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
 
+                    <article class="product-card" data-category="lingeries">
+                        <img src="images/produto3.png" class="product-card__image" alt="Conjunto Premium em renda clara" loading="lazy">
+                        <div class="product-card__content">
+                            <span class="product-card__category">Lingeries</span>
+                            <h3 class="product-card__title">Conjunto Premium</h3>
+                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do Conjunto Premium">Ver detalhes <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="lingeries">
+                        <img src="images/produto2.png" class="product-card__image" alt="Conjunto Renda Noir em tom bordô" loading="lazy">
+                        <div class="product-card__content">
+                            <span class="product-card__category">Lingeries</span>
+                            <h3 class="product-card__title">Renda Noir</h3>
+                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do conjunto Renda Noir">Ver detalhes <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="bodies">
+                        <img src="images/produto1.png" class="product-card__image" alt="Body Sublime azul-marinho" loading="lazy">
+                        <div class="product-card__content">
+                            <span class="product-card__category">Bodies</span>
+                            <h3 class="product-card__title">Body Sublime</h3>
+                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do Body Sublime">Ver detalhes <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="acessorios">
+                        <img src="images/produto3.png" class="product-card__image" alt="Acessório de renda em tom claro" loading="lazy">
+                        <div class="product-card__content">
+                            <span class="product-card__category">Acessórios</span>
+                            <h3 class="product-card__title">Renda Essencial</h3>
+                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do acessório Renda Essencial">Ver detalhes <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="collection-empty" id="collectionEmpty" hidden>Nenhum produto encontrado nesta categoria.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="container">
+            <img src="images/logo.png" class="footer-logo" alt="T'SECRETS">
 
-            <span class="subtitulo">
+            <nav class="footer-menu" aria-label="Navegação do rodapé">
+                <a href="index.html">Início</a>
+                <a href="colecao.html">Coleção</a>
+                <a href="contato.html">Contato</a>
+            </nav>
 
-                Nossa Coleção
-
-            </span>
-
-            <h1>
-
-                Elegância em cada detalhe.
-
-            </h1>
-
-            <p>
-
-                Descubra peças desenvolvidas para valorizar sua beleza
-                com conforto e sofisticação.
-
-            </p>
-
+            <p>© 2026 T'SECRETS • Todos os direitos reservados.</p>
         </div>
+    </footer>
 
-    </section>
-
-    <!-- filtros -->
-
-    <section class="collection-filter">
-
-        <div class="container">
-
-            <button class="active">
-
-                Todos
-
-            </button>
-
-            <button>
-
-                Lingeries
-
-            </button>
-
-            <button>
-
-                Bodies
-
-            </button>
-
-            <button>
-
-                Acessórios
-
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- Produtos -->
-
-    <section class="section">
-
-        <div class="container">
-
-            <div class="product-grid">
-                <article class="product-card">
-
-    <img
-        src="images/produto1.png"
-        class="product-card__image"
-        alt="">
-
-    <div class="product-card__content">
-
-        <h3 class="product-card__title">
-
-            Conjunto Bordô
-
-        </h3>
-
-        <a href="produto.html"
-           class="product-card__link">
-
-            Ver detalhes →
-
-        </a>
-
-    </div>
-
-</article><article class="product-card">
-
-    <img
-        src="images/produto1.png"
-        class="product-card__image"
-        alt="">
-
-    <div class="product-card__content">
-
-        <h3 class="product-card__title">
-
-            Conjunto Bordô
-
-        </h3>
-
-        <a href="produto.html"
-           class="product-card__link">
-
-            Ver detalhes →
-
-        </a>
-
-    </div>
-
-</article><article class="product-card">
-
-    <img
-        src="images/produto1.png"
-        class="product-card__image"
-        alt="">
-
-    <div class="product-card__content">
-
-        <h3 class="product-card__title">
-
-            Conjunto Bordô
-
-        </h3>
-
-        <a href="produto.html"
-           class="product-card__link">
-
-            Ver detalhes →
-
-        </a>
-
-    </div>
-
-</article><article class="product-card">
-
-    <img
-        src="images/produto1.png"
-        class="product-card__image"
-        alt="">
-
-    <div class="product-card__content">
-
-        <h3 class="product-card__title">
-
-            Conjunto Bordô
-
-        </h3>
-
-        <a href="produto.html"
-           class="product-card__link">
-
-            Ver detalhes →
-
-        </a>
-
-    </div>
-
-</article><article class="product-card">
-
-    <img
-        src="images/produto1.png"
-        class="product-card__image"
-        alt="">
-
-    <div class="product-card__content">
-
-        <h3 class="product-card__title">
-
-            Conjunto Bordô
-
-        </h3>
-
-        <a href="produto.html"
-           class="product-card__link">
-
-            Ver detalhes →
-
-        </a>
-
-    </div>
-
-</article><article class="product-card">
-
-    <img
-        src="images/produto1.png"
-        class="product-card__image"
-        alt="">
-
-    <div class="product-card__content">
-
-        <h3 class="product-card__title">
-
-            Conjunto Bordô
-
-        </h3>
-
-        <a href="produto.html"
-           class="product-card__link">
-
-            Ver detalhes →
-
-        </a>
-
-    </div>
-
-</article><article class="product-card">
-
-    <img
-        src="images/produto1.png"
-        class="product-card__image"
-        alt="">
-
-    <div class="product-card__content">
-
-        <h3 class="product-card__title">
-
-            Conjunto Bordô
-
-        </h3>
-
-        <a href="produto.html"
-           class="product-card__link">
-
-            Ver detalhes →
-
-        </a>
-
-    </div>
-
-</article><article class="product-card">
-
-    <img
-        src="images/produto1.png"
-        class="product-card__image"
-        alt="">
-
-    <div class="product-card__content">
-
-        <h3 class="product-card__title">
-
-            Conjunto Bordô
-
-        </h3>
-
-        <a href="produto.html"
-           class="product-card__link">
-
-            Ver detalhes →
-
-        </a>
-
-    </div>
-
-</article><article class="product-card">
-
-    <img
-        src="images/produto1.png"
-        class="product-card__image"
-        alt="">
-
-    <div class="product-card__content">
-
-        <h3 class="product-card__title">
-
-            Conjunto Bordô
-
-        </h3>
-
-        <a href="produto.html"
-           class="product-card__link">
-
-            Ver detalhes →
-
-        </a>
-
-    </div>
-
-</article>
-        </div>
-
-    </div>
-
-</section>
-
-</main>
-
-<footer>
-
-    <div class="container">
-
-        <img
-            src="images/logo.png"
-            class="footer-logo"
-            alt="">
-
-        <p>
-
-            © 2026 T'SECRETS • Todos os direitos reservados.
-
-        </p>
-
-    </div>
-
-</footer>
-
-<script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

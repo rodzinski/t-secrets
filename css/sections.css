@@ -280,6 +280,14 @@
 
 }
 
+.collection-filter button:focus-visible{
+
+    outline:2px solid var(--dourado);
+
+    outline-offset:3px;
+
+}
+
 .collection-filter button:hover,
 
 .collection-filter button.active{
@@ -287,5 +295,15 @@
     background:var(--dourado);
 
     color:var(--preto);
+
+}
+
+.collection-empty{
+
+    margin-top:40px;
+
+    color:var(--cinza);
+
+    text-align:center;
 
 }

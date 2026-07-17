@@ -6,6 +6,8 @@
     gap:35px;
 }
 .product-card{
+    display:flex;
+    flex-direction:column;
     background:linear-gradient(
         180deg,
         #1d1d1d 0%,
@@ -43,6 +45,15 @@
 .product-card__content{
     padding:25px;
 }
+.product-card__category{
+    display:block;
+    margin-bottom:8px;
+    color:var(--dourado);
+    font-size:.75rem;
+    font-weight:600;
+    letter-spacing:1.6px;
+    text-transform:uppercase;
+}
 .product-card__title{
     margin-bottom:15px;
     font-family:var(--titulo);
@@ -52,10 +63,14 @@
     display:inline-flex;
     align-items:center;
     gap:8px;
+    min-height:44px;
     color:var(--dourado);
     font-weight:600;
     transition:var(--transition);
 }
 .product-card__link:hover{
     letter-spacing:.5px;
+}
+.product-card.is-hidden{
+    display:none;
 }
