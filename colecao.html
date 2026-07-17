@@ -20,7 +20,7 @@
 
 <body>
 
-<header>
+<header class="header">
 
     <div class="container">
 
@@ -30,7 +30,7 @@
 
         </a>
 
-        <nav class="menu">
+        <nav class="menu" id="menu" aria-label="Navegação principal">
 
             <ul>
 
@@ -42,17 +42,43 @@
 
             </ul>
 
+            <a href="contato.html" class="btn-header mobile-btn">
+
+                Comprar Agora
+
+            </a>
+
         </nav>
 
-        <a href="contato.html" class="btn-header">
+        <div class="header-actions">
 
-            Comprar Agora
+            <a href="contato.html" class="btn-header desktop-btn">
 
-        </a>
+                Comprar Agora
+
+            </a>
+
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menu"
+                aria-controls="menu"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
 
     </div>
 
 </header>
+
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
 
 <main>
 
@@ -370,5 +396,6 @@
 
 </footer>
 
+<script src="js/scripts.js"></script>
 </body>
 </html>

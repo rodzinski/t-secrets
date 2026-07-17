@@ -41,6 +41,19 @@ nav a:hover{
 nav a:hover::after{
     width:100%;
 }
+nav a.active{
+    color:var(--dourado);
+}
+nav a.active::after{
+    width:100%;
+}
+.logo:focus-visible,
+nav a:focus-visible,
+.btn-header:focus-visible,
+.menu-toggle:focus-visible{
+    outline:2px solid var(--dourado);
+    outline-offset:5px;
+}
 .btn-header{
     padding:12px 28px;
     background:var(--dourado);
@@ -73,6 +86,7 @@ nav a:hover::after{
     background:none;
 
     border:none;
+    color:inherit;
 
     cursor:pointer;
 
@@ -119,4 +133,9 @@ nav a:hover::after{
 
     z-index:998;
 
+    pointer-events:none;
+
+}
+.menu-overlay.active{
+    pointer-events:auto;
 }

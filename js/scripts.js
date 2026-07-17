@@ -1,39 +1,31 @@
 const menu = document.getElementById("menu");
-
 const toggle = document.getElementById("menuToggle");
-
 const overlay = document.getElementById("menuOverlay");
 
-toggle.addEventListener("click", () => {
+if (menu && toggle && overlay) {
+    const setMenuState = (isOpen) => {
+        menu.classList.toggle("active", isOpen);
+        toggle.classList.toggle("active", isOpen);
+        overlay.classList.toggle("active", isOpen);
+        toggle.setAttribute("aria-expanded", String(isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
+        overlay.setAttribute("aria-hidden", String(!isOpen));
+    };
 
-    menu.classList.toggle("active");
-
-    toggle.classList.toggle("active");
-
-    overlay.classList.toggle("active");
-
-});
-
-overlay.addEventListener("click", () => {
-
-    menu.classList.remove("active");
-
-    toggle.classList.remove("active");
-
-    overlay.classList.remove("active");
-
-});
-
-document.querySelectorAll(".menu a").forEach(link=>{
-
-    link.addEventListener("click",()=>{
-
-        menu.classList.remove("active");
-
-        toggle.classList.remove("active");
-
-        overlay.classList.remove("active");
-
+    toggle.addEventListener("click", () => {
+        setMenuState(!menu.classList.contains("active"));
     });
 
-});
+    overlay.addEventListener("click", () => setMenuState(false));
+
+    document.querySelectorAll(".menu a").forEach((link) => {
+        link.addEventListener("click", () => setMenuState(false));
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && menu.classList.contains("active")) {
+            setMenuState(false);
+            toggle.focus();
+        }
+    });
+}

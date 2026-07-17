@@ -25,7 +25,7 @@
             <img src="images/logo.png" alt="T'SECRETS">
         </a>
 
-        <nav class="menu" id="menu">
+        <nav class="menu" id="menu" aria-label="Navegação principal">
 
             <ul>
 
@@ -62,9 +62,12 @@
             </a>
 
             <button
+                type="button"
                 class="menu-toggle"
                 id="menuToggle"
-                aria-label="Abrir menu">
+                aria-label="Abrir menu"
+                aria-controls="menu"
+                aria-expanded="false">
 
                 <span></span>
                 <span></span>
@@ -78,7 +81,7 @@
 
 </header>
 
-<div class="menu-overlay" id="menuOverlay"></div>
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
     <!-- ================= MAIN ================= -->
 
     <main>

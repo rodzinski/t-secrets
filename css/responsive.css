@@ -58,6 +58,12 @@
 
     }
 
+    .menu a.active::after{
+
+        width:100%;
+
+    }
+
     .mobile-btn{
 
         display:inline-flex;
