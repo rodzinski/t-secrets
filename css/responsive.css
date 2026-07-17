@@ -129,13 +129,42 @@
 
     }
 
+    /* Header */
+
+    header{
+
+        padding:10px 0;
+
+        background:rgba(15,15,15,.72);
+
+    }
+
+    .logo img{
+
+        width:96px;
+
+    }
+
+    .header-actions{
+
+        gap:8px;
+
+    }
+
+    .menu-toggle{
+
+        width:42px;
+        height:42px;
+
+    }
+
     /* HERO */
 
     .hero{
 
         min-height:85vh;
 
-        padding:120px 0 70px;
+        padding:132px 0 72px;
 
         background-position:65% center;
 
@@ -174,6 +203,12 @@
         width:100%;
 
         text-align:center;
+
+    }
+
+    .scroll-indicator{
+
+        bottom:26px;
 
     }
 
@@ -328,15 +363,15 @@
 
     .logo img{
 
-        width:120px;
+        width:96px;
 
     }
 
     .hero{
 
-        min-height:80vh;
+        min-height:35rem;
 
-        padding:110px 0 60px;
+        padding:116px 0 60px;
 
     }
 
