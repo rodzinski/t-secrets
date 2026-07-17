@@ -1,0 +1,167 @@
+/* ================= PRODUTO ================= */
+
+.product-page{
+    padding-top:160px;
+}
+
+.breadcrumb{
+    display:flex;
+    gap:8px;
+    margin-bottom:40px;
+    color:var(--cinza);
+    font-size:.9rem;
+}
+
+.breadcrumb a{
+    transition:var(--transition);
+}
+
+.breadcrumb a:hover{
+    color:var(--dourado);
+}
+
+.product-layout{
+    display:grid;
+    grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
+    gap:70px;
+    align-items:start;
+}
+
+.product-gallery__main{
+    overflow:hidden;
+    border:1px solid rgba(214,180,124,.12);
+    border-radius:var(--radius);
+    background:#181818;
+}
+
+.product-gallery__main img{
+    aspect-ratio:4/5;
+    object-fit:cover;
+}
+
+.product-gallery__thumbnails{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin-top:14px;
+}
+
+.product-thumbnail{
+    padding:0;
+    overflow:hidden;
+    border:2px solid transparent;
+    border-radius:12px;
+    background:#181818;
+    cursor:pointer;
+    transition:var(--transition);
+}
+
+.product-thumbnail img{
+    aspect-ratio:1;
+    object-fit:cover;
+}
+
+.product-thumbnail:hover,
+.product-thumbnail.active{
+    border-color:var(--dourado);
+}
+
+.product-thumbnail:focus-visible,
+.size-option:focus-visible{
+    outline:2px solid var(--dourado);
+    outline-offset:3px;
+}
+
+.product-details{
+    padding-top:20px;
+}
+
+.product-eyebrow{
+    display:block;
+    margin-bottom:14px;
+    color:var(--dourado);
+    font-size:.8rem;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.product-details h1{
+    font-family:var(--titulo);
+    font-size:3.5rem;
+    line-height:1.1;
+}
+
+.product-price{
+    display:block;
+    margin:22px 0;
+    color:var(--dourado);
+    font-size:1.35rem;
+    font-weight:600;
+}
+
+.product-description{
+    margin-bottom:32px;
+    color:var(--cinza);
+    line-height:1.8;
+}
+
+.product-size-label{
+    display:block;
+    margin-bottom:14px;
+    font-weight:600;
+}
+
+.product-sizes{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:32px;
+}
+
+.size-option{
+    min-width:48px;
+    min-height:48px;
+    border:1px solid rgba(214,180,124,.25);
+    border-radius:50%;
+    background:transparent;
+    color:var(--branco);
+    cursor:pointer;
+    transition:var(--transition);
+}
+
+.size-option:hover,
+.size-option.active{
+    border-color:var(--dourado);
+    background:var(--dourado);
+    color:var(--preto);
+}
+
+.product-details .btn{
+    width:100%;
+    text-align:center;
+}
+
+.product-benefits{
+    display:grid;
+    gap:14px;
+    margin-top:30px;
+    color:var(--cinza);
+    font-size:.9rem;
+}
+
+.product-benefits li{
+    position:relative;
+    padding-left:22px;
+}
+
+.product-benefits li::before{
+    content:"";
+    position:absolute;
+    top:.55em;
+    left:0;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--dourado);
+}

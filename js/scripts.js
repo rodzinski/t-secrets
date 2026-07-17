@@ -68,3 +68,36 @@ if (filterButtons.length && collectionCards.length) {
         });
     });
 }
+
+const productMainImage = document.getElementById("productMainImage");
+const productThumbnails = document.querySelectorAll("[data-product-image]");
+const sizeOptions = document.querySelectorAll("[data-size]");
+
+if (productMainImage && productThumbnails.length) {
+    productThumbnails.forEach((thumbnail) => {
+        thumbnail.addEventListener("click", () => {
+            productMainImage.src = thumbnail.dataset.productImage;
+            productMainImage.alt = thumbnail.dataset.productAlt;
+
+            productThumbnails.forEach((item) => {
+                const isActive = item === thumbnail;
+
+                item.classList.toggle("active", isActive);
+                item.setAttribute("aria-pressed", String(isActive));
+            });
+        });
+    });
+}
+
+if (sizeOptions.length) {
+    sizeOptions.forEach((sizeOption) => {
+        sizeOption.addEventListener("click", () => {
+            sizeOptions.forEach((item) => {
+                const isActive = item === sizeOption;
+
+                item.classList.toggle("active", isActive);
+                item.setAttribute("aria-pressed", String(isActive));
+            });
+        });
+    });
+}
