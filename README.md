@@ -128,3 +128,41 @@ js/
 - Confirmar e, se necessário, atualizar o horário de atendimento em `contato.html`.
 - Integrar o formulário marcado com `data-contact-form` ao serviço de envio escolhido; ele hoje apenas valida os campos no navegador.
 - Atualizar os metadados de título e descrição quando os nomes e produtos finais estiverem definidos.
+
+## Controle de disponibilidade
+
+### Produto disponivel
+
+Use `data-status="available"` no card do produto:
+
+```html
+<article class="product-card" data-category="conjuntos" data-status="available">
+```
+
+### Produto esgotado
+
+Troque o valor para `sold-out`:
+
+```html
+<article class="product-card" data-category="conjuntos" data-status="sold-out">
+```
+
+Quando o produto estiver com `data-status="sold-out"`, o JavaScript aplica a classe visual de indisponivel, muda o selo para `Esgotado` e desativa o link do card.
+
+### Tamanho disponivel
+
+Mantenha o botao normalmente:
+
+```html
+<button type="button" class="size-option" data-size="M" aria-pressed="false">M</button>
+```
+
+### Tamanho esgotado
+
+Adicione `disabled` ao botao do tamanho:
+
+```html
+<button type="button" class="size-option" data-size="GG" aria-pressed="false" disabled>GG</button>
+```
+
+O tamanho com `disabled` fica apagado/riscado no CSS e nao pode ser selecionado pelo JavaScript.

@@ -60,9 +60,8 @@
         <section class="collection-filter" aria-label="Filtrar produtos por categoria">
             <div class="container" role="group" aria-label="Categorias de produtos">
                 <button type="button" class="active" data-filter="todos" aria-pressed="true">Todos</button>
-                <button type="button" data-filter="lingeries" aria-pressed="false">Lingeries</button>
-                <button type="button" data-filter="bodies" aria-pressed="false">Bodies</button>
-                <button type="button" data-filter="acessorios" aria-pressed="false">Acessórios</button>
+                <button type="button" data-filter="conjuntos" aria-pressed="false">Conjuntos</button>
+                <button type="button" data-filter="calcinhas" aria-pressed="false">Calcinhas</button>
             </div>
         </section>
 
@@ -75,57 +74,102 @@
                 </div>
 
                 <div class="product-grid" id="collectionGrid">
-                    <article class="product-card" data-category="lingeries">
-                        <img src="images/produto1.png" class="product-card__image" alt="Conjunto Bordô azul-marinho" loading="lazy">
+                    <article class="product-card" data-category="conjuntos" data-status="available">
+                        <img src="images/natural-cozy.png" class="product-card__image" alt="Natural Cozy" loading="lazy">
                         <div class="product-card__content">
-                            <span class="product-card__category">Lingeries</span>
-                            <h3 class="product-card__title">Conjunto Bordô</h3>
-                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do Conjunto Bordô">Ver detalhes <span aria-hidden="true">→</span></a>
+                            <span class="product-card__category">Conjuntos</span>
+                            <h3 class="product-card__title">Natural Cozy</h3>
+                            <span class="product-card__price">R$ 89,90</span>
+                            <span class="product-card__status">Disponível</span>
+                            <a href="produto.html?produto=natural-cozy" class="product-card__link" aria-label="Ver detalhes do Natural Cozy">Ver detalhes <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
 
-                    <article class="product-card" data-category="bodies">
-                        <img src="images/produto2.png" class="product-card__image" alt="Body Sensual bordô" loading="lazy">
+                    <article class="product-card" data-category="conjuntos" data-status="available">
+                        <img src="images/tifani-classico-marfim.png" class="product-card__image" alt="Tifani Clássico Marfim" loading="lazy">
                         <div class="product-card__content">
-                            <span class="product-card__category">Bodies</span>
-                            <h3 class="product-card__title">Body Sensual</h3>
-                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do Body Sensual">Ver detalhes <span aria-hidden="true">→</span></a>
+                            <span class="product-card__category">Conjuntos</span>
+                            <h3 class="product-card__title">Tifani Clássico Marfim</h3>
+                            <span class="product-card__price">R$ 89,90</span>
+                            <span class="product-card__status">Disponível</span>
+                            <a href="produto.html?produto=tifani-classico-marfim" class="product-card__link" aria-label="Ver detalhes do Tifani Clássico Marfim">Ver detalhes <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
 
-                    <article class="product-card" data-category="lingeries">
-                        <img src="images/produto3.png" class="product-card__image" alt="Conjunto Premium em renda clara" loading="lazy">
+                    <article class="product-card" data-category="conjuntos" data-status="available">
+                        <img src="images/conjunto-raquel.png" class="product-card__image" alt="Conjunto Raquel" loading="lazy">
                         <div class="product-card__content">
-                            <span class="product-card__category">Lingeries</span>
-                            <h3 class="product-card__title">Conjunto Premium</h3>
-                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do Conjunto Premium">Ver detalhes <span aria-hidden="true">→</span></a>
+                            <span class="product-card__category">Conjuntos</span>
+                            <h3 class="product-card__title">Conjunto Raquel</h3>
+                            <span class="product-card__price">R$ 79,90</span>
+                            <span class="product-card__status">Disponível</span>
+                            <a href="produto.html?produto=conjunto-raquel" class="product-card__link" aria-label="Ver detalhes do Conjunto Raquel">Ver detalhes <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
 
-                    <article class="product-card" data-category="lingeries">
-                        <img src="images/produto2.png" class="product-card__image" alt="Conjunto Renda Noir em tom bordô" loading="lazy">
+                    <article class="product-card" data-category="conjuntos" data-status="available">
+                        <img src="images/conjunto-cris.png" class="product-card__image" alt="Conjunto Cris" loading="lazy">
                         <div class="product-card__content">
-                            <span class="product-card__category">Lingeries</span>
-                            <h3 class="product-card__title">Renda Noir</h3>
-                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do conjunto Renda Noir">Ver detalhes <span aria-hidden="true">→</span></a>
+                            <span class="product-card__category">Conjuntos</span>
+                            <h3 class="product-card__title">Conjunto Cris</h3>
+                            <span class="product-card__price">R$ 79,90</span>
+                            <span class="product-card__status">Disponível</span>
+                            <a href="produto.html?produto=conjunto-cris" class="product-card__link" aria-label="Ver detalhes do Conjunto Cris">Ver detalhes <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
 
-                    <article class="product-card" data-category="bodies">
-                        <img src="images/produto1.png" class="product-card__image" alt="Body Sublime azul-marinho" loading="lazy">
+                    <article class="product-card" data-category="conjuntos" data-status="available">
+                        <img src="images/tifani-classico-azul.png" class="product-card__image" alt="Tifani Clássico Azul" loading="lazy">
                         <div class="product-card__content">
-                            <span class="product-card__category">Bodies</span>
-                            <h3 class="product-card__title">Body Sublime</h3>
-                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do Body Sublime">Ver detalhes <span aria-hidden="true">→</span></a>
+                            <span class="product-card__category">Conjuntos</span>
+                            <h3 class="product-card__title">Tifani Clássico Azul</h3>
+                            <span class="product-card__price">R$ 89,90</span>
+                            <span class="product-card__status">Disponível</span>
+                            <a href="produto.html?produto=tifani-classico-azul" class="product-card__link" aria-label="Ver detalhes do Tifani Clássico Azul">Ver detalhes <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
 
-                    <article class="product-card" data-category="acessorios">
-                        <img src="images/produto3.png" class="product-card__image" alt="Acessório de renda em tom claro" loading="lazy">
+                    <article class="product-card" data-category="conjuntos" data-status="available">
+                        <img src="images/conjunto-isabel.png" class="product-card__image" alt="Conjunto Isabel" loading="lazy">
                         <div class="product-card__content">
-                            <span class="product-card__category">Acessórios</span>
-                            <h3 class="product-card__title">Renda Essencial</h3>
-                            <a href="produto.html" class="product-card__link" aria-label="Ver detalhes do acessório Renda Essencial">Ver detalhes <span aria-hidden="true">→</span></a>
+                            <span class="product-card__category">Conjuntos</span>
+                            <h3 class="product-card__title">Conjunto Isabel</h3>
+                            <span class="product-card__price">R$ 69,90</span>
+                            <span class="product-card__status">Disponível</span>
+                            <a href="produto.html?produto=conjunto-isabel" class="product-card__link" aria-label="Ver detalhes do Conjunto Isabel">Ver detalhes <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="conjuntos" data-status="available">
+                        <img src="images/conjunto-duda.png" class="product-card__image" alt="Conjunto Duda" loading="lazy">
+                        <div class="product-card__content">
+                            <span class="product-card__category">Conjuntos</span>
+                            <h3 class="product-card__title">Conjunto Duda</h3>
+                            <span class="product-card__price">R$ 69,90</span>
+                            <span class="product-card__status">Disponível</span>
+                            <a href="produto.html?produto=conjunto-duda" class="product-card__link" aria-label="Ver detalhes do Conjunto Duda">Ver detalhes <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="calcinhas" data-status="available">
+                        <img src="images/calcinhas-pompom.png" class="product-card__image" alt="Calcinhas pompom" loading="lazy">
+                        <div class="product-card__content">
+                            <span class="product-card__category">Calcinhas</span>
+                            <h3 class="product-card__title">Calcinhas pompom</h3>
+                            <span class="product-card__price">R$ 29,90</span>
+                            <span class="product-card__status">Disponível</span>
+                            <a href="produto.html?produto=calcinhas-pompom" class="product-card__link" aria-label="Ver detalhes das Calcinhas pompom">Ver detalhes <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="calcinhas" data-status="available">
+                        <img src="images/fio-confort.png" class="product-card__image" alt="Fio Confort" loading="lazy">
+                        <div class="product-card__content">
+                            <span class="product-card__category">Calcinhas</span>
+                            <h3 class="product-card__title">Fio Confort</h3>
+                            <span class="product-card__price">R$ 24,90</span>
+                            <span class="product-card__status">Disponível</span>
+                            <a href="produto.html?produto=fio-confort" class="product-card__link" aria-label="Ver detalhes do Fio Confort">Ver detalhes <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
                 </div>
